@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/PhoneName"
+        android:layout_width="156dp"
+        android:layout_height="44dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/PhoneName" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="#9F9C9C"
+        android:backgroundTint="#888787"
+        android:text="buy"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/Price"
+        app:layout_constraintTop_toBottomOf="@id/Price" />
+
+    <ImageView
+        android:id="@+id/VipIcone"
+        android:visibility="invisible"
+        android:layout_width="53dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/PhoneName"
+        app:layout_constraintStart_toEndOf="@+id/PhoneName"
+        app:srcCompat="@drawable/ic_baseline_star_rate_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

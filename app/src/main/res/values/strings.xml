@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HW_product_recycleview</string>
+    <string name="phone1">Iphone 12 64GB</string>
+    <string name="phone2">Samsung Galaxy S21 Ultra</string>
+    <string name="phone3">Xiaomi 11T Pro</string>
+    <string name="phone4">Huawei Y6p</string>
+    <string name="phone5">Samsung Galaxy Z Flip3</string>
+    <string name="phone6">Iphone 13</string>
+</resources>
