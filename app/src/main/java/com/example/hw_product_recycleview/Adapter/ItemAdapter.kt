@@ -33,7 +33,7 @@ class ItemAdapter(private val context: Context, private val dataset: List<Phone>
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.productImage?.setImageResource(item.productImage)
-        holder.productName?.text = item.productName
+        holder.productName?.text = context.resources.getText(item.productName)
         holder.productPrice?.text = item.productPrice
 
         if (item.isVip) {
@@ -51,7 +51,9 @@ class ItemAdapter(private val context: Context, private val dataset: List<Phone>
 
                 val intent = Intent(context, MainActivity2::class.java)
                 intent.putExtra("name", item.productName)
+                intent.putExtra("image",item.productImage)
                it.context.startActivity(intent)
+
             }
         }
     }

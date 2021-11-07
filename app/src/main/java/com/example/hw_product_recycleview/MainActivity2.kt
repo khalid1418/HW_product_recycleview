@@ -11,9 +11,13 @@ class MainActivity2 : AppCompatActivity() {
         binding= ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       val intentText = intent.extras!!.getString("name")
-              print(intentText)
-        binding.phonename.text = intentText
+       val intentText = intent.extras!!.getInt("name")
+        binding.phonename.text = getText(intentText)
+                val intentImage= intent!!.extras?.getInt("image")
+                binding.imagephone.setImageResource(intentImage!!)
+
+
+
 
 
 
